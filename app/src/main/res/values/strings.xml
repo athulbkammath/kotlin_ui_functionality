@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Binding_usage_project</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enterEmailId"> Enter the Email id</string>
+    <string name="enterTheName">Enter the Nam̨e</string>
+    <string name="enterThePhoneNumber">Enter the Phone Number</string>
+    <string name="formValidation">1. Form Validation</string>
+    <string name="functionalities">Functionalities</string>
+    <string name="screen">Screen</string>
+    <string name="goBack">Go Back</string>
+    <string name="save">Save</string>
+    <string name="clearAll">Clear all</string>
+    <string name="nameCannotBeEmpty">Name cannot be empty</string>
+    <string name="enterValid10DigitPhoneNumber">Enter valid 10-digit phone number</string>
+    <string name="enterValidEmailAddress">Enter valid email address</string>
+    <string name="formSubmittedSuccessfully">Form Submitted Successfully</string>
+</resources>

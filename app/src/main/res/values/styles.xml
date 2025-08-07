@@ -1,0 +1,13 @@
+<resources>
+    <!-- Custom style for the Toolbar title -->
+    <style name="ToolbarTitleStyle">
+        <item name="android:textColor">#FFFFFF</item> <!-- White text color -->
+        <item name="android:textSize">35sp</item> <!-- Font size -->
+    </style>
+
+    <!-- Custom style for the Toolbar subtitle -->
+    <style name="ToolbarSubtitleStyle">
+        <item name="android:textColor">#B0B0B0</item> <!-- Gray text color -->
+        <item name="android:textSize">14sp</item> <!-- Font size -->
+    </style>
+</resources>
