@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.eto.binding_usage_project.R
 import com.eto.binding_usage_project.databinding.FragmentHomePageBinding
 
 
@@ -26,6 +27,10 @@ class HomePage : Fragment() {
         val action = HomePageDirections.actionFirstFragmentToSecondFragment("Form Validation")
         binding.bvFormValidation.setOnClickListener {
             findNavController().navigate(action)
+        }
+
+        binding.bvImageLoad.setOnClickListener {
+            findNavController().navigate(R.id.action_first_fragment_to_imageLoadingFragment)
         }
 
     }

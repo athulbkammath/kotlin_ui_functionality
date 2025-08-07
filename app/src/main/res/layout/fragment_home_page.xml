@@ -30,12 +30,25 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="start"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
             android:text="@string/formValidation"
             app:flow_horizontalAlign="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <Button
+            android:id="@+id/bvImageLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="8dp"
+            android:text="@string/load_image"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="@+id/bvFormValidation"
+            app:layout_constraintStart_toEndOf="@+id/bvFormValidation"
+            app:layout_constraintTop_toTopOf="@+id/bvFormValidation"
+            app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
