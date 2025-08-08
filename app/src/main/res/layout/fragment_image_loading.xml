@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.ImageLoadingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ImageLoadingFragment">
+
+
+        <ImageView
+
+            android:id="@+id/ivGlide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/ivPicasso"
+            app:layout_constraintStart_toStartOf="@+id/ivPicasso"
+            app:layout_constraintTop_toBottomOf="@+id/bvPicasso"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/bvGlide"
+            android:layout_width="189dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="Glide Image Loading"
+            app:layout_constraintEnd_toEndOf="@+id/ivGlide"
+            app:layout_constraintStart_toStartOf="@+id/ivGlide"
+            app:layout_constraintTop_toBottomOf="@+id/ivGlide" />
+
+        <Button
+            android:id="@+id/bvPicasso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Picasso Image Loading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPicasso" />
+
+        <Button
+            android:id="@+id/bvBack"
+            android:layout_width="134dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="28dp"
+            android:text="@string/goBack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+
+            android:id="@+id/ivPicasso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
