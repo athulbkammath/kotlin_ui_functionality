@@ -18,6 +18,10 @@
             android:id="@+id/action_first_fragment_to_imageLoadingFragment"
             app:destination="@id/imageLoadingFragment"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_first_fragment_to_movieListPage"
+            app:destination="@id/movieListPage"
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/fragment_form_validation"
@@ -38,12 +42,23 @@
         android:id="@+id/imageLoadingFragment"
         android:name="com.eto.binding_usage_project.ui.ImageLoadingFragment"
         android:label="fragment_image_loading"
-        tools:layout="@layout/fragment_image_loading" >
+        tools:layout="@layout/fragment_image_loading">
 
         <action
             android:id="@+id/action_imageLoadingFragment_to_first_fragment"
             app:destination="@id/fragment_home_page"
             app:enterAnim="@animator/nav_default_enter_anim" />
     </fragment>
+    <fragment
+        android:id="@+id/movieListPage"
+        android:name="com.eto.binding_usage_project.ui.MovieListPage"
+        android:label="fragment_movie_list_page"
+        tools:layout="@layout/fragment_movie_list_page">
+        <action
+            android:id="@+id/action_movieListPage_to_fragment_home_page"
+            app:destination="@id/fragment_home_page"
+            app:enterAnim="@animator/nav_default_enter_anim" />
+    </fragment>
+
 
 </navigation>

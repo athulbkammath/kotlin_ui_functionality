@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -25,30 +26,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Flow layout that arranges buttons -->
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flowButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:constraint_referenced_ids="bvFormValidation,bvImageLoad,bvRetroFitApiCall"
+            app:flow_horizontalGap="0dp"
+            app:flow_verticalGap="12dp"
+            app:flow_wrapMode="chain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
         <Button
             android:id="@+id/bvFormValidation"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="start"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/formValidation"
-            app:flow_horizontalAlign="center"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+            android:layout_height="wrap_content"
+            android:text="@string/formValidation" />
 
         <Button
             android:id="@+id/bvImageLoad"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="start"
-            android:layout_marginStart="8dp"
-            android:text="@string/load_image"
-            app:flow_horizontalAlign="center"
-            app:layout_constraintBottom_toBottomOf="@+id/bvFormValidation"
-            app:layout_constraintStart_toEndOf="@+id/bvFormValidation"
-            app:layout_constraintTop_toTopOf="@+id/bvFormValidation"
-            app:layout_constraintVertical_bias="1.0" />
+            android:layout_height="wrap_content"
+            android:text="@string/load_image" />
+
+
+        <Button
+            android:id="@+id/bvRetroFitApiCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retrofitApiCall" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
