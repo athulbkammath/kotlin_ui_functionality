@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.androidx.navigation.safeargs)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -46,6 +47,12 @@ android {
 }
 
 dependencies {
+    implementation(libs.google.flexbox)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp)
+    implementation(libs.gson)
+    implementation(libs.coil)
     implementation(libs.picasso)
     implementation(libs.glide)
     implementation(libs.androidx.core.ktx)
@@ -56,8 +63,10 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.fragment)
+    implementation(libs.play.services.dtdi)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.kotlinx.serialization.json)
 
 }

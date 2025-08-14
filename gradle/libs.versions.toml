@@ -14,9 +14,24 @@ navigationUiKtx = "2.9.3"
 fragment = "1.8.8"
 glide = "4.16.0"
 picasso = "2.8"
+retrofit = "3.0.0"
+okhttp = "4.12.0"
+gson = "2.10.1"
+coil = "2.7.0"
+kotlin-serialization = "2.0.21"
+kotlinx-serialization-json = "1.7.3"
+playServicesDtdi = "16.0.0-beta02"
+flexbox = "3.0.0"
+
 
 [libraries]
-
+google-flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,8 +45,10 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 androidx-fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
+play-services-dtdi = { group = "com.google.android.gms", name = "play-services-dtdi", version.ref = "playServicesDtdi" }
 
 [plugins]
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-serialization" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidx-navigation-safeargs = { id = "androidx.navigation.safeargs", version = "2.9.3" }

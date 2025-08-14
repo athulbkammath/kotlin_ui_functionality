@@ -33,6 +33,10 @@ class HomePage : Fragment() {
             findNavController().navigate(R.id.action_first_fragment_to_imageLoadingFragment)
         }
 
+        binding.bvRetroFitApiCall.setOnClickListener {
+            findNavController().navigate(R.id.action_first_fragment_to_movieListPage)
+        }
+
     }
 }
 
