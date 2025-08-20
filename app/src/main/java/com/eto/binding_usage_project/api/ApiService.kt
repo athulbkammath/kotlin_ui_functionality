@@ -11,7 +11,4 @@ interface ApiService {
     @GET("movie/popular")
     fun getPopularMovies(@Query("page") page: Int): Call<MovieListModel>
 
-
-
-
 }

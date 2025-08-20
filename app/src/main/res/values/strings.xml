@@ -16,4 +16,5 @@
     <string name="formSubmittedSuccessfully">Form Submitted Successfully</string>
     <string name="load_image">2. Load Image</string>
     <string name="retrofitApiCall">3. Retrofit Api Call</string>
+    <string name="retrofitHiltApiCall">4. Retrofit Hilt API Call</string>
 </resources>

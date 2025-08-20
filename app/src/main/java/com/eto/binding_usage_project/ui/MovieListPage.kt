@@ -32,8 +32,12 @@ class MovieListPage : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         binding = FragmentMovieListPageBinding.inflate(inflater, container, false)
-        setUpClicks()
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setUpClicks()
     }
 
 
@@ -50,6 +54,7 @@ class MovieListPage : Fragment() {
 
                     when (response.code()) {
                         in 200..299 -> {
+
                             val itData = response.body()?.results
 
                             if (!itData.isNullOrEmpty()) {

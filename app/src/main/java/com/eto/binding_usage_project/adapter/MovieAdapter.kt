@@ -15,9 +15,10 @@ import com.eto.binding_usage_project.response.Results
 import com.eto.binding_usage_project.util.Constants
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import javax.inject.Inject
 
 
-class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+class MovieAdapter @Inject constructor() : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     private lateinit var context: Context
 
@@ -35,6 +36,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(differ.currentList[position])
+        holder.setIsRecyclable(false)
     }
 
     inner class ViewHolder(private val binding: ItemLayoutBinding) :
