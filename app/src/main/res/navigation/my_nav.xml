@@ -22,6 +22,10 @@
             android:id="@+id/action_first_fragment_to_movieListPage"
             app:destination="@id/movieListPage"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_first_fragment_to_movieListHilt"
+            app:destination="@id/movieListHilt"
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
     <fragment
         android:id="@+id/fragment_form_validation"
@@ -59,6 +63,14 @@
             app:destination="@id/fragment_home_page"
             app:enterAnim="@animator/nav_default_enter_anim" />
     </fragment>
-
+    <fragment
+        android:id="@+id/movieListHilt"
+        android:name="com.eto.binding_usage_project.ui.MovieListHilt"
+        android:label="fragment_movie_list_hilt"
+        tools:layout="@layout/fragment_movie_list_hilt" />
+    <action
+        android:id="@+id/action_movieListHilt_to_fragment_home_page"
+        app:destination="@id/fragment_home_page"
+        app:enterAnim="@animator/nav_default_enter_anim" />
 
 </navigation>
