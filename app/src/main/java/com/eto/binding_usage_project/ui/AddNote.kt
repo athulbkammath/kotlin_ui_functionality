@@ -6,14 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.room.Room
 import com.eto.binding_usage_project.R
 import com.eto.binding_usage_project.databinding.FragmentAddNoteBinding
 import com.eto.binding_usage_project.db.NoteDataBase
 import com.eto.binding_usage_project.db.NoteEntity
-import com.eto.binding_usage_project.util.Constants
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class AddNote : Fragment() {
@@ -22,15 +21,8 @@ class AddNote : Fragment() {
 
     private lateinit var noteEntity: NoteEntity
 
-    private val noteDB: NoteDataBase by lazy {
-        Room.databaseBuilder(
-            requireContext(),
-            NoteDataBase::class.java,
-            Constants.NOTE_DATABASE
-        ).allowMainThreadQueries()
-            .fallbackToDestructiveMigration(false)
-            .build()
-    }
+    @Inject
+    lateinit var noteDB: NoteDataBase
 
 
     override fun onCreateView(

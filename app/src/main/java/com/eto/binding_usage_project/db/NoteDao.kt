@@ -9,7 +9,6 @@ import androidx.room.Query
 import androidx.room.Update
 import com.eto.binding_usage_project.util.Constants.NOTE_TABLE
 
-//Required
 @Dao
 interface NoteDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
