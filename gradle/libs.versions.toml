@@ -25,7 +25,8 @@ playServicesDtdi = "16.0.0-beta02"
 flexbox = "3.0.0"
 runtimeSavedInstanceState = "1.0.0-alpha11"
 hilt = "2.51.1"
-ksp = "2.0.21-1.0.24"
+ksp = "2.2.0-1.0.28"
+room = "2.7.2"
 
 [libraries]
 google-flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
@@ -53,5 +54,9 @@ play-services-dtdi = { group = "com.google.android.gms", name = "play-services-d
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 androidx-runtime-saved-instance-state = { group = "androidx.compose.runtime", name = "runtime-saved-instance-state", version.ref = "runtimeSavedInstanceState" } # ✅ added
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 
 [plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

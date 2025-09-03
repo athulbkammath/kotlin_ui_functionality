@@ -39,6 +39,9 @@ class HomePage : Fragment() {
         binding.bvRetroFitHiltApiCall.setOnClickListener {
             findNavController().navigate(R.id.action_first_fragment_to_movieListHilt)
         }
+        binding.bvRoomDatabase.setOnClickListener {
+            findNavController().navigate(R.id.action_first_fragment_to_roomDatabase)
+        }
 
     }
 }
