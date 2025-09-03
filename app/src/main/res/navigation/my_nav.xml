@@ -26,7 +26,12 @@
             android:id="@+id/action_first_fragment_to_movieListHilt"
             app:destination="@id/movieListHilt"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_first_fragment_to_roomDatabase"
+            app:destination="@id/noteListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
+
     <fragment
         android:id="@+id/fragment_form_validation"
         android:name="com.eto.binding_usage_project.ui.FormValidation"
@@ -42,17 +47,18 @@
             app:destination="@id/fragment_home_page"
             app:enterAnim="@animator/nav_default_enter_anim" />
     </fragment>
+
     <fragment
         android:id="@+id/imageLoadingFragment"
         android:name="com.eto.binding_usage_project.ui.ImageLoadingFragment"
         android:label="fragment_image_loading"
         tools:layout="@layout/fragment_image_loading">
-
         <action
             android:id="@+id/action_imageLoadingFragment_to_first_fragment"
             app:destination="@id/fragment_home_page"
             app:enterAnim="@animator/nav_default_enter_anim" />
     </fragment>
+
     <fragment
         android:id="@+id/movieListPage"
         android:name="com.eto.binding_usage_project.ui.MovieListPage"
@@ -63,6 +69,7 @@
             app:destination="@id/fragment_home_page"
             app:enterAnim="@animator/nav_default_enter_anim" />
     </fragment>
+
     <fragment
         android:id="@+id/movieListHilt"
         android:name="com.eto.binding_usage_project.ui.MovieListHilt"
@@ -72,5 +79,50 @@
         android:id="@+id/action_movieListHilt_to_fragment_home_page"
         app:destination="@id/fragment_home_page"
         app:enterAnim="@animator/nav_default_enter_anim" />
+
+    <fragment
+        android:id="@+id/addNote"
+        android:name="com.eto.binding_usage_project.ui.AddNote"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note">
+        <action
+            android:id="@+id/action_addNote_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.eto.binding_usage_project.ui.NoteListFragment"
+        android:label="fragment_note_list"
+        tools:layout="@layout/fragment_note_list">
+        <action
+            android:id="@+id/action_noteListFragment_to_addNote"
+            app:destination="@id/addNote"
+            app:enterAnim="@animator/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_noteListFragment_to_updateNoteFragment"
+            app:destination="@id/updateNoteFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_second_fragment_to_first_fragment"
+            app:destination="@id/fragment_home_page"
+            app:enterAnim="@animator/nav_default_enter_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/updateNoteFragment"
+        android:name="com.eto.binding_usage_project.ui.UpdateNoteFragment"
+        android:label="fragment_update_note"
+        tools:layout="@layout/fragment_update_note">
+
+        <!-- ✅ Only noteId is passed -->
+        <argument
+            android:name="noteId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_updateNoteFragment_to_noteListFragment2"
+            app:destination="@id/noteListFragment" />
+    </fragment>
 
 </navigation>
