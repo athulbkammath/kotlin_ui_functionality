@@ -9,22 +9,20 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.room.Room
 import com.eto.binding_usage_project.R
 import com.eto.binding_usage_project.databinding.FragmentNoteListBinding
 import com.eto.binding_usage_project.db.NoteDataBase
-import com.eto.binding_usage_project.util.Constants.NOTE_DATABASE
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class NoteListFragment : Fragment() {
 
     private lateinit var binding: FragmentNoteListBinding
 
-    private val noteDB: NoteDataBase by lazy {
-        Room.databaseBuilder(
-            requireContext(), NoteDataBase::class.java, NOTE_DATABASE
-        ).allowMainThreadQueries().fallbackToDestructiveMigration(false).build()
-    }
+    @Inject
+    lateinit var noteDB: NoteDataBase
 
     private val noteAdapter by lazy {
         NoteAdapter { note ->
