@@ -27,6 +27,7 @@ runtimeSavedInstanceState = "1.0.0-alpha11"
 hilt = "2.51.1"
 ksp = "2.2.0-1.0.28"
 room = "2.7.2"
+mpandroidchart = "v3.1.0"
 
 [libraries]
 google-flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
@@ -57,6 +58,7 @@ androidx-runtime-saved-instance-state = { group = "androidx.compose.runtime", na
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
 
 [plugins]
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
