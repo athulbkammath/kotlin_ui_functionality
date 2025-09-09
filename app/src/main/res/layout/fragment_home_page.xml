@@ -32,7 +32,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:constraint_referenced_ids="bvFormValidation,bvImageLoad,bvRetroFitApiCall,bvRetroFitHiltApiCall,bvRoomDatabase"
+            app:constraint_referenced_ids="bvFormValidation,bvImageLoad,bvRetroFitApiCall,bvRetroFitHiltApiCall,bvRoomDatabase,bvBarChart"
             app:flow_horizontalGap="0dp"
             app:flow_verticalGap="12dp"
             app:flow_wrapMode="chain"
@@ -63,18 +63,20 @@
             android:id="@+id/bvRetroFitHiltApiCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/retrofitHiltApiCall"
-            tools:layout_editor_absoluteX="189dp"
-            tools:layout_editor_absoluteY="294dp" />
+            android:text="@string/retrofitHiltApiCall" />
 
         <Button
             android:id="@+id/bvRoomDatabase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/roomDataBase"
-            tools:layout_editor_absoluteX="189dp"
-            tools:layout_editor_absoluteY="294dp" />
+            android:text="@string/roomDataBase" />
 
+
+        <Button
+            android:id="@+id/bvBarChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/barChart" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

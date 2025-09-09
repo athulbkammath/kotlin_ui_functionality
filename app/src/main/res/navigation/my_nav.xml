@@ -30,6 +30,10 @@
             android:id="@+id/action_first_fragment_to_roomDatabase"
             app:destination="@id/noteListFragment"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_first_fragment_to_barChart"
+            app:destination="@id/barChart"
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
 
     <fragment
@@ -124,5 +128,10 @@
             android:id="@+id/action_updateNoteFragment_to_noteListFragment2"
             app:destination="@id/noteListFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/barChart"
+        android:name="com.eto.binding_usage_project.ui.BarChart"
+        android:label="fragment_bar_chart"
+        tools:layout="@layout/fragment_bar_chart" />
 
 </navigation>

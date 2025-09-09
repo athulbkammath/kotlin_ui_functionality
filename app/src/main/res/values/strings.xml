@@ -18,4 +18,5 @@
     <string name="retrofitApiCall">3. Retrofit Api Call</string>
     <string name="retrofitHiltApiCall">4. Retrofit Hilt API Call</string>
     <string name="roomDataBase">5. Room Database</string>
+    <string name="barChart">6. Bar Chart</string>
 </resources>

@@ -36,11 +36,15 @@ class HomePage : Fragment() {
         binding.bvRetroFitApiCall.setOnClickListener {
             findNavController().navigate(R.id.action_first_fragment_to_movieListPage)
         }
+
         binding.bvRetroFitHiltApiCall.setOnClickListener {
             findNavController().navigate(R.id.action_first_fragment_to_movieListHilt)
         }
         binding.bvRoomDatabase.setOnClickListener {
             findNavController().navigate(R.id.action_first_fragment_to_roomDatabase)
+        }
+        binding.bvBarChart.setOnClickListener {
+            findNavController().navigate(R.id.action_first_fragment_to_barChart)
         }
 
     }
