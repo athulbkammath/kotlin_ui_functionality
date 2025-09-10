@@ -34,6 +34,10 @@
             android:id="@+id/action_first_fragment_to_barChart"
             app:destination="@id/barChart"
             app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_first_fragment_to_horizontalBarChart"
+            app:destination="@id/horizontalBarChart"
+            app:enterAnim="@anim/nav_default_enter_anim" />
     </fragment>
 
     <fragment
@@ -119,7 +123,6 @@
         android:label="fragment_update_note"
         tools:layout="@layout/fragment_update_note">
 
-        <!-- ✅ Only noteId is passed -->
         <argument
             android:name="noteId"
             app:argType="integer" />
@@ -133,5 +136,10 @@
         android:name="com.eto.binding_usage_project.ui.BarChart"
         android:label="fragment_bar_chart"
         tools:layout="@layout/fragment_bar_chart" />
+    <fragment
+        android:id="@+id/horizontalBarChart"
+        android:name="com.eto.binding_usage_project.ui.HorizontalBarChart"
+        android:label="fragment_horizontal_bar_chart"
+        tools:layout="@layout/fragment_horizontal_bar_chart" />
 
 </navigation>
