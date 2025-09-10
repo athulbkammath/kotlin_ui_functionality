@@ -32,7 +32,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            app:constraint_referenced_ids="bvFormValidation,bvImageLoad,bvRetroFitApiCall,bvRetroFitHiltApiCall,bvRoomDatabase,bvBarChart"
+            app:constraint_referenced_ids="bvFormValidation,bvImageLoad,bvRetroFitApiCall,bvRetroFitHiltApiCall,bvRoomDatabase,bvBarChart,bvHorizontalBarChart"
             app:flow_horizontalGap="0dp"
             app:flow_verticalGap="12dp"
             app:flow_wrapMode="chain"
@@ -77,6 +77,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/barChart" />
+
+        <Button
+            android:id="@+id/bvHorizontalBarChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/horizontalBarChart" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

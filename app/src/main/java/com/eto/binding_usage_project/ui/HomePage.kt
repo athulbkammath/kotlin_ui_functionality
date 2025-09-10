@@ -47,6 +47,9 @@ class HomePage : Fragment() {
             findNavController().navigate(R.id.action_first_fragment_to_barChart)
         }
 
+        binding.bvHorizontalBarChart.setOnClickListener {
+            findNavController().navigate(R.id.action_first_fragment_to_horizontalBarChart)
+        }
     }
 }
 
