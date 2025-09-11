@@ -19,7 +19,7 @@ class BarChart : Fragment() {
 
     private lateinit var binding: FragmentBarChartBinding
 
-    val profitValue = ArrayList<BarEntry>()
+    private val profitValue = ArrayList<BarEntry>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?

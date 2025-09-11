@@ -50,6 +50,10 @@ class HomePage : Fragment() {
         binding.bvHorizontalBarChart.setOnClickListener {
             findNavController().navigate(R.id.action_first_fragment_to_horizontalBarChart)
         }
+
+        binding.bvLineChart.setOnClickListener {
+            findNavController().navigate(R.id.action_fragment_home_page_to_lineChart)
+        }
     }
 }
 
