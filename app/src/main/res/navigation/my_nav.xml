@@ -40,7 +40,14 @@
             app:enterAnim="@anim/nav_default_enter_anim" />
         <action
             android:id="@+id/action_fragment_home_page_to_lineChart"
-            app:destination="@id/lineChart" />
+            app:destination="@id/lineChart"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
+        <action
+            android:id="@+id/action_fragment_home_page_to_barcodeScanner"
+            app:destination="@id/barcodeScanner"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+
     </fragment>
 
     <fragment
@@ -148,5 +155,9 @@
         android:id="@+id/lineChart"
         android:name="com.eto.binding_usage_project.ui.LineChart"
         android:label="LineChart" />
+    <fragment
+        android:id="@+id/barcodeScanner"
+        android:name="com.eto.binding_usage_project.ui.BarcodeScannerFragment"
+        android:label="@layout/fragment_barcode_scanner" />
 
 </navigation>
