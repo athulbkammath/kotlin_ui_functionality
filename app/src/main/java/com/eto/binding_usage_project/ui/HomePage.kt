@@ -54,6 +54,9 @@ class HomePage : Fragment() {
         binding.bvLineChart.setOnClickListener {
             findNavController().navigate(R.id.action_fragment_home_page_to_lineChart)
         }
+        binding.bvBarcodeScanner.setOnClickListener {
+            findNavController().navigate(R.id.action_fragment_home_page_to_barcodeScanner)
+        }
     }
 }
 

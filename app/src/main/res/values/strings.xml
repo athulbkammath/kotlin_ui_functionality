@@ -21,4 +21,5 @@
     <string name="barChart">6. Bar Chart</string>
     <string name="horizontalBarChart">7. Horizontal Bar Chart</string>
     <string name="lineChart">8. Line Chart</string>
+    <string name="barcodeScanner">9. Barcode Scanner</string>
 </resources>
